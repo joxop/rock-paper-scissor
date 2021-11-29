@@ -12,7 +12,7 @@
 
         let plyrChoice = playerSelection.toLowerCase();
         let a = `player choice is ${plyrChoice}`
-
+        let b;
         if (compChoice === 1){
          console.log("compute's choice is Rock!");
     }else if(compChoice === 2){
@@ -20,6 +20,23 @@
     }else{
         console.log("Computer's choice is Scissors");
     }
+    if (compChoice===1 && plyrChoice === "paper"){
+        return  "congrats, you win, Paper beats rock!!!";
+    } else if(compChoice===2 && plyrChoice === "scissors"){
+        return "congrats, you win, Scissors beats paper!!!";
+    }else if (compChoice===3 && plyrChoice=== "rock"){
+        return "congrats, you win, Rock beats Scissors!!!";
+    }else if(compChoice===2 && plyrChoice === "rock"){
+        return "sorry, you lose, paper beats rock!!!";
+    }else if(compChoice===3 && plyrChoice === "paper"){
+        return "sorry, you lose, scissors beats paper!!!";
+    }else if(compChoice===1 && plyrChoice === "paper"){
+        return "sorry, you lose, rock beats scissors!!!"
+    }
+    else{
+        return (`this is a tie ${a} and ${b}`)
+    }
+
 
 }
 
