@@ -3,10 +3,15 @@
 <head></head>
 <body>
     <script>
+    let x= prompt('please type "rock", "paper" or "scissors"');
 
-    function computerPlay(computerSelection){
+
+    function computerPlay(computerSelection,playerSelection){
 
         let compChoice = Math.floor(Math.random() * computerSelection + 1);
+
+        let plyrChoice = playerSelection.toLowerCase();
+        let a = `player choice is ${plyrChoice}`
 
         if (compChoice === 1){
          console.log("compute's choice is Rock!");
@@ -18,7 +23,12 @@
 
 }
 
-    console.log(computerPlay(3))
+
+
+
+
+
+    console.log(computerPlay(3, x))
 
 
     </script>
