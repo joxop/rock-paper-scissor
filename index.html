@@ -3,7 +3,7 @@
 <head></head>
 <body>
     <script>
-    let x= prompt('please type "rock", "paper" or "scissors"');
+    let x= prompt('please type "rock", "paper" or "scissor"');
 
 
     function computerPlay(computerSelection,playerSelection){
@@ -18,37 +18,31 @@
     }else if(compChoice === 2){
         console.log("Computer's choice is Paper!");
     }else{
-        console.log("Computer's choice is Scissors");
+        console.log("Computer's choice is Scissor");
     }
     if (compChoice===1 && plyrChoice === "paper"){
         return  "congrats, you win, Paper beats rock!!!";
-    } else if(compChoice===2 && plyrChoice === "scissors"){
-        return "congrats, you win, Scissors beats paper!!!";
+    } else if(compChoice===2 && plyrChoice === "scissor"){
+        return "congrats, you win, Scissor beats paper!!!";
     }else if (compChoice===3 && plyrChoice=== "rock"){
-        return "congrats, you win, Rock beats Scissors!!!";
+        return "congrats, you win, Rock beats Scissor!!!";
     }else if(compChoice===2 && plyrChoice === "rock"){
         return "sorry, you lose, paper beats rock!!!";
     }else if(compChoice===3 && plyrChoice === "paper"){
-        return "sorry, you lose, scissors beats paper!!!";
-    }else if(compChoice===1 && plyrChoice === "scissors"){
-        return "sorry, you lose, rock beats scissors!!!";
+        return "sorry, you lose, Scissor beats paper!!!";
+    }else if(compChoice===1 && plyrChoice === "scissor"){
+        return "sorry, you lose, rock beats Scissor!!!";
     }else if(compChoice===2 && plyrChoice ==="paper"){
         return "you both choose, Paper, this results in a tie";
-    }else if(compChoice===3 && plyrChoice === "scissors"){
-        return "you both choose, scissors, this results in a tie";
+    }else if(compChoice===3 && plyrChoice === "scissor"){
+        return "you both choose, Scissor, this results in a tie";
     }else if(compChoice===1 && plyrChoice=== "rock"){
         return "you both choose, Rock, this results in a tie";
     }
     else{
         return "please check your spelling and try again"
     }
-
-
 }
-
-
-
-
 
 
     console.log(computerPlay(3, x))
