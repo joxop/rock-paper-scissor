@@ -14,11 +14,11 @@
         let a = `player choice is ${plyrChoice}`
         let b;
         if (compChoice === 1){
-         console.log("compute's choice is Rock!");
+         let x = "compute's choice is Rock!";
     }else if(compChoice === 2){
-        console.log("Computer's choice is Paper!");
+       let x = "Computer's choice is Paper!";
     }else{
-        console.log("Computer's choice is Scissor");
+        let x = "Computer's choice is Scissor";
     }
     if (compChoice===1 && plyrChoice === "paper"){
         return  "congrats, you win, Paper beats rock!!!";
@@ -27,17 +27,17 @@
     }else if (compChoice===3 && plyrChoice=== "rock"){
         return "congrats, you win, Rock beats Scissor!!!";
     }else if(compChoice===2 && plyrChoice === "rock"){
-        return "sorry, you lose, paper beats rock!!!";
+        return "Paper beats Rock, you Lose!!!";
     }else if(compChoice===3 && plyrChoice === "paper"){
-        return "sorry, you lose, Scissor beats paper!!!";
+        return "Scissor Beats paper, you lose!!!";
     }else if(compChoice===1 && plyrChoice === "scissor"){
-        return "sorry, you lose, rock beats Scissor!!!";
+        return "Rock beats Scissor, you Lose!!!";
     }else if(compChoice===2 && plyrChoice ==="paper"){
-        return "you both choose, Paper, this results in a tie";
+        return "the computer choose paper and you choose paper this results in a tie";
     }else if(compChoice===3 && plyrChoice === "scissor"){
-        return "you both choose, Scissor, this results in a tie";
+        return "the computer choose scissor and you choose scissor this results in a tie";;
     }else if(compChoice===1 && plyrChoice=== "rock"){
-        return "you both choose, Rock, this results in a tie";
+        return "the computer choose rock and you choose rock this results in a tie";
     }
     else{
         return "please check your spelling and try again"
@@ -45,7 +45,20 @@
 }
 
 
+
     console.log(computerPlay(3, x))
+
+
+
+// function game(num){
+// for (let i=1; i<5;i++){
+//     console.log(computerPlay(3, x))
+// }
+// }
+
+
+// game(5)
+
 
 
     </script>
